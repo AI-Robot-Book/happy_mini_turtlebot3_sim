@@ -25,6 +25,7 @@
         <mass>1.3729096e+00</mass>
       </inertial>
 
+      <!-- LIDARと干渉するのでコリジョンを外す
       <collision name="base_collision">
         <pose>0.015 0 0.55 0 0 0</pose>
         <geometry>
@@ -33,7 +34,7 @@
             <length>1.1</length>
           </cylinder>
         </geometry>
-      </collision>
+      </collision> -->
 
       <visual name="base_visual">
         <pose>-0.064 -0.142 -0.03 0 0 1.55</pose>
@@ -421,8 +422,8 @@
 
       <sensor name="hls_lfcd_lds" type="ray">
         <always_on>true</always_on>
-        <!--<visualize>true</visualize>-->
-        <visualize>false</visualize>
+        <visualize>true</visualize>
+        <!--<visualize>false</visualize>-->
         <!--<pose>-0.064 0 0.121 0 0 0</pose>-->
         <pose>0.14 0 0.141 0 0 0</pose>
         <update_rate>5</update_rate>
