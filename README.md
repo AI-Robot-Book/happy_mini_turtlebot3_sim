@@ -28,7 +28,7 @@ $ sudo apt install ros-foxy-turtlebot3-gazebo
 ```
 $ cd ~/airobot_ws/src
 $ git clone https://github.com/AI-Robot-Book/happy_mini_turtlebot3_sim
-$ cd ~/colcon_ws
+$ cd ~/airobot_ws
 $ colcon build 
 ```
 
